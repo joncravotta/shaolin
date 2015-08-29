@@ -1,0 +1,205 @@
+/* line 2, ../sass/main.scss */
+body {
+  margin: 0 auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 6, ../sass/main.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 9, ../sass/main.scss */
+h1 {
+  margin: 0;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+/* line 15, ../sass/main.scss */
+.navbar {
+  color: #120079;
+  background-color: #fff;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  width: 100%;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  border-bottom: #120079 3px solid;
+}
+
+/* line 30, ../sass/main.scss */
+.nav-left {
+  width: 70%;
+  padding-left: 35px;
+}
+
+/* line 34, ../sass/main.scss */
+.nav-right {
+  width: 30%;
+  align-items: center;
+  text-align: center;
+  padding: 0 35px;
+}
+/* line 39, ../sass/main.scss */
+.nav-right i {
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+/* line 44, ../sass/main.scss */
+.container {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* line 53, ../sass/main.scss */
+#map {
+  height: 100%;
+  width: 70%;
+  float: left;
+}
+
+/* line 58, ../sass/main.scss */
+.landmarks {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  height: 100%;
+  width: 30%;
+  float: left;
+  overflow: scroll;
+  padding: 0 0px;
+  margin: auto;
+}
+/* line 67, ../sass/main.scss */
+.landmarks ul {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+/* line 72, ../sass/main.scss */
+.landmarks ul li {
+  text-decoration: none;
+  color: #120079;
+  list-style: none;
+  padding: 25px 0;
+  border-bottom: 2px #120079 solid;
+  cursor: pointer;
+}
+/* line 80, ../sass/main.scss */
+.landmarks ul li:hover {
+  background-color: #f7f7f7 !important;
+}
+/* line 83, ../sass/main.scss */
+.landmarks ul li:active {
+  background-color: #f7f7f7;
+}
+
+/* line 88, ../sass/main.scss */
+.gm-style .gm-style-iw {
+  max-height: 300px;
+  overflow-y: auto;
+}
+/* line 91, ../sass/main.scss */
+.gm-style .gm-style-iw a {
+  margin-bottom: 10px;
+}
+
+/* line 95, ../sass/main.scss */
+.info_content {
+  overflow: auto;
+}
+/* line 97, ../sass/main.scss */
+.info_content a {
+  margin-bottom: 10px;
+}
+/* line 100, ../sass/main.scss */
+.info_content img {
+  margin: auto;
+  max-width: 300px;
+}
+
+/* line 107, ../sass/main.scss */
+.fourth {
+  width: 25%;
+  height: 200px;
+  background-color: #120079;
+  color: #fff;
+}
+
+/* line 114, ../sass/main.scss */
+.container {
+  width: 1440px;
+}
+
+/* line 117, ../sass/main.scss */
+.whole {
+  width: 100%;
+}
+
+@media (max-width: 769px) {
+  /* line 122, ../sass/main.scss */
+  #map {
+    height: 45vh;
+    width: 100%;
+    display: block;
+  }
+
+  /* line 127, ../sass/main.scss */
+  .landmarks {
+    height: 45vh;
+    width: 100%;
+    display: block;
+    padding: 0;
+  }
+
+  /* line 133, ../sass/main.scss */
+  .container {
+    display: block;
+  }
+
+  /* line 136, ../sass/main.scss */
+  h1 {
+    font-size: 25px;
+  }
+
+  /* line 139, ../sass/main.scss */
+  .nav-right {
+    width: 0%;
+    padding: 0;
+  }
+  /* line 142, ../sass/main.scss */
+  .nav-right i {
+    display: none;
+  }
+
+  /* line 145, ../sass/main.scss */
+  .nav-left {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  /* line 151, ../sass/main.scss */
+  .info_content img {
+    max-width: 400px;
+  }
+}
+@media (max-width: 500px) {
+  /* line 158, ../sass/main.scss */
+  .info_content img {
+    max-width: 300px;
+  }
+}

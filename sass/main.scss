@@ -1,0 +1,162 @@
+@import "includes";
+body {
+  margin: 0 auto;
+  -webkit-overflow-scrolling:touch;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  margin: 0;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+}
+.navbar {
+  color: #120079;
+  background-color: #fff;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  width: 100%;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  border-bottom: #120079 3px solid;
+}
+.nav-left {
+  width: 70%;
+  padding-left: 35px;
+}
+.nav-right {
+  width: 30%;
+  align-items: center;
+  text-align: center;
+  padding: 0 35px;
+  i {
+    padding: 0 10px;
+    cursor: pointer;
+  }
+}
+.container {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+#map {
+  height: 100%;
+  width: 70%;
+  float: left;
+}
+.landmarks {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  height: 100%;
+  width: 30%;
+  float: left;
+  overflow: scroll;
+  padding: 0 0px;
+  margin: auto;
+  ul {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    li {
+      text-decoration: none;
+      color: #120079;
+      list-style: none;
+      padding: 25px 0;
+      border-bottom: 2px #120079 solid;
+      cursor: pointer;
+    }
+    li:hover {
+      background-color: #f7f7f7 !important;
+    }
+    li:active {
+      background-color: #f7f7f7;
+    }
+  }
+}
+.gm-style .gm-style-iw {
+  max-height: 300px;
+overflow-y: auto;
+  a {
+    margin-bottom: 10px;
+  }
+}
+  .info_content {
+        overflow: auto;
+    a {
+      margin-bottom: 10px;
+    }
+    img {
+      margin: auto;
+      max-width: 300px
+    }
+  }
+
+
+.fourth {
+  width: 25%;
+  height:200px;
+  background-color: #120079;
+  color: $white;
+
+}
+.container {
+  width: 1440px;
+}
+.whole {
+  width: 100%;
+}
+@media (max-width: 769px) {
+
+  #map {
+    height: 45vh;
+    width: 100%;
+    display: block;
+  }
+  .landmarks {
+    height: 45vh;
+    width: 100%;
+    display: block;
+    padding: 0;
+  }
+  .container {
+    display: block;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  .nav-right {
+    width: 0%;
+    padding: 0;
+    i {
+      display: none;
+    }}
+    .nav-left {
+      width: 100%;
+      padding: 0;
+      text-align: center;
+    }
+    .info_content {
+      img {
+        max-width: 400px
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    .info_content {
+      img {
+        max-width: 300px
+      }
+    }
+  }
